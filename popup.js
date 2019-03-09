@@ -4,7 +4,8 @@
 
 'use strict'
 
-const kMaps_key = 'AIzaSyBa5aieunaIp3Obco-dNVYMdbnTZGAVkKQ';
+// Get valid API Key from: https://console.cloud.google.com/apis/credentials
+const kMaps_key = '';
 
 function gclient_geocode(address) {
   let url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' +
