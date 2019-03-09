@@ -8,7 +8,7 @@ const kMaps_key = 'AIzaSyBa5aieunaIp3Obco-dNVYMdbnTZGAVkKQ';
 
 function gclient_geocode(address) {
   let url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' +
-            encodeURIComponent(address) + '&sensor=false';
+            encodeURIComponent(address) + '&sensor=false&key=' + kMaps_key;
   let request = new XMLHttpRequest();
 
   request.open('GET', url, true);
